@@ -63,4 +63,14 @@ public class Coin {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+    @Override
+    public String toString() {
+        if(this.quantity == 1) {
+            return (this.quantity + this.name);
+        }
+        else {
+            return (this.quantity + this.nameplural);
+        }
+    }
 }
