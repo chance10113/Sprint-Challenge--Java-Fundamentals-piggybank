@@ -1,4 +1,7 @@
 package com.lambdaschool.piggybank.repositories;
 
-public interface CoinRepository {
+import com.lambdaschool.piggybank.models.Coin;
+import org.springframework.data.repository.CrudRepository;
+
+public interface CoinRepository extends CrudRepository<Coin, Long> {
 }
